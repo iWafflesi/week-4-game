@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- External CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<title>Week 4 Game</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Crystal Collector!</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- Instructions -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the
+					random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the values of each crystal</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Game Coutner/wins and losses -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="numberToGuess"></div>
+			</div>
+			<div class="col-sm-4">
+				<div class="wins">Wins: </div>
+				<div class="losses">Losses: </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Buttons -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<button class="buttonOne"></button>
+				<button class="buttonTwo"></button>
+				<button class="buttonThree"></button>
+				<button class="buttonFour"></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Player Counter -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<p>Your total score is:</p>
+				<div class="currentGuess">0 </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Eternal JS -->
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+
+</html>
