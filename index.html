@@ -20,7 +20,7 @@
 	<!-- Header -->
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12 col-lg-12 boxOne">
 				<h1>Crystal Collector!</h1>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 	<!-- Instructions -->
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12 col-lg-12 boxOne">
 				<p>You will be given a random number at the start of the game.</p>
 				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
 				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the
@@ -43,12 +43,18 @@
 	<!-- Game Coutner/wins and losses -->
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8">
-				<div class="numberToGuess"></div>
+			<div class="col-sm-6 col-lg-6 boxTwo">
+				<div class="numberToGuess">
+					<span id="randomNumber"></span>
+				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="wins">Wins: </div>
-				<div class="losses">Losses: </div>
+			<div class="col-sm-4 col-lg-4 boxTwo">
+				<div class="wins">Wins:
+					<span id="currentWins">0</span>
+				</div>
+				<div class="losses">Losses:
+					<span id="currentLosses">0</span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -56,11 +62,12 @@
 	<!-- Buttons -->
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-3">
-				<button class="buttonOne"></button>
-				<button class="buttonTwo"></button>
-				<button class="buttonThree"></button>
-				<button class="buttonFour"></button>
+			<div class="col-sm-12 col-md-12 col-lg-12 img-responsive boxOne">
+				<img src="./assets/images/diamond_ore.jpg" id="img1" class="image img-responsive" alt="">
+				<img src="./assets/images/KhaydarinCrystal_SCR_Game1.jpg" id="img2" class="image img-responsive" alt="">
+				<img src="./assets/images/Protoss_Pylon.jpg" id="img3" class="image img-responsive" alt="">
+				<img src="./assets/images/RichMineralField.jpg" id="img4" class="image img-responsive" alt="">
+				<br>
 			</div>
 		</div>
 	</div>
@@ -68,9 +75,11 @@
 	<!-- Player Counter -->
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-8 col-lg-8 boxTwo">
 				<p>Your total score is:</p>
-				<div class="currentGuess">0 </div>
+			</div>
+			<div class="col-sm-8 col-lg-8 boxTwo">
+				<span id="currentGuess">0</span>
 			</div>
 		</div>
 	</div>

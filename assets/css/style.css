@@ -1,0 +1,27 @@
+.image {
+	height: auto;
+	max-height: 200px;
+	max-width: 200px;
+	width: 25%;
+	float: left;
+	padding-right: 10px;
+	padding-left: 0px;
+}
+
+body {
+	background-image: url("../images/gaming-pattern.png");
+}
+
+.boxOne {
+	background-color: gray;
+	padding: 10px;
+	margin: 5px;
+	
+}
+
+.boxTwo {
+	background-color: gray;
+	padding: 10px;
+	margin: 5px;
+	font-size: 30px;
+}
